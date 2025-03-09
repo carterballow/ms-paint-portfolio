@@ -5,22 +5,22 @@ export default function Resume() {
   
         <div className="border-2 border-[#808080] p-6 bg-[#efefef]">
           <div className="text-center mb-6">
-            <h1 className="text-2xl font-bold">Carter Barrow</h1>
-            <p className="text-sm">San Francisco, CA • (123) 456-7890 • carter.ballow@example.com</p>
-            <p className="text-sm">www.carterballow.com • github.com/carterballow • linkedin.com/in/carterballow</p>
+            <h1 className="text-2xl font-bold">Carter Ballowow</h1>
+            <p className="text-sm">Encinitas, CA • (760) 525-4955 • carterballow06@g.ucla.edu</p>
+            <p className="text-sm">carterballow.com • github.com/carterballow • linkedin.com/in/carterballow/</p>
           </div>
   
           <div className="mb-6">
             <h2 className="text-lg font-bold border-b border-[#808080] mb-2">EDUCATION</h2>
             <div className="flex justify-between">
               <div>
-                <p className="font-bold">University of Technology</p>
+                <p className="font-bold">University of California, Los Angeles</p>
                 <p>Bachelor of Science in Computer Science</p>
               </div>
-              <p>2018 - 2022</p>
+              <p>2022 - 2026</p>
             </div>
-            <p className="text-sm mt-1">GPA: 3.8/4.0</p>
-            <p className="text-sm">Relevant Coursework: Data Structures, Algorithms, Web Development, Database Systems</p>
+            <p className="text-sm mt-1">GPA: 3.9/4.0</p>
+            <p className="text-sm">Relevant Coursework: Discrete Structures, Differential Equations, Computer Science</p>
           </div>
   
           <div className="mb-6">
