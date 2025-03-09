@@ -6,10 +6,9 @@ interface HomePageProps {
   onNavigate: (tab: string) => void
   selectedColor: string
   selectedTool: string
-  onClearDrawing: () => void
 }
 
-export default function HomePage({ onNavigate, selectedColor, selectedTool, onClearDrawing }: HomePageProps) {
+export default function HomePage({ onNavigate, selectedColor, selectedTool }: HomePageProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const [isDrawing, setIsDrawing] = useState(false)
   const [lastPos, setLastPos] = useState({ x: 0, y: 0 })
@@ -44,7 +43,7 @@ export default function HomePage({ onNavigate, selectedColor, selectedTool, onCl
     }
   }
 
-  // Clear the canvas - now triggered from the toolbar
+  // Clear the canvas and localStorage
   const clearCanvas = () => {
     const canvas = canvasRef.current
     if (!canvas) return
@@ -53,12 +52,8 @@ export default function HomePage({ onNavigate, selectedColor, selectedTool, onCl
     if (!ctx) return
 
     ctx.clearRect(0, 0, canvas.width, canvas.height)
+    localStorage.removeItem("ms-paint-drawing")
   }
-
-  // Listen for clear drawing events from parent
-  useEffect(() => {
-    clearCanvas()
-  }, [onClearDrawing])
 
   useEffect(() => {
     const canvas = canvasRef.current
@@ -230,8 +225,22 @@ export default function HomePage({ onNavigate, selectedColor, selectedTool, onCl
             High School Archive
           </button>
         </div>
+
+        {/* Clear canvas button - only visible when there's a drawing */}
+        <button
+          onClick={clearCanvas}
+          className="mt-8 px-4 py-2 bg-red-500 text-white font-bold border-2 border-black rounded-none transition-colors hover:bg-red-600 focus:outline-none pointer-events-auto"
+          style={{
+            fontFamily: "Arial, sans-serif",
+            textRendering: "geometricPrecision",
+            WebkitFontSmoothing: "antialiased",
+            MozOsxFontSmoothing: "grayscale",
+            boxShadow: "2px 2px 0 rgba(0,0,0,0.2)",
+          }}
+        >
+          Clear Drawing
+        </button>
       </div>
     </div>
   )
 }
-

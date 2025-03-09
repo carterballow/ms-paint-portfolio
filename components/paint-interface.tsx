@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { useState, useCallback } from "react"
+import { useState } from "react"
 import { useRouter } from "next/navigation"
 import { X } from "lucide-react"
 
@@ -32,20 +32,6 @@ export default function PaintInterface() {
   const [nextTabId, setNextTabId] = useState(2)
   const [selectedColor, setSelectedColor] = useState("#000000")
   const [selectedTool, setSelectedTool] = useState("pencil")
-
-  // Function to clear the canvas - will be passed to both Toolbar and HomePage
-  const clearDrawing = useCallback(() => {
-    localStorage.removeItem("ms-paint-drawing")
-    // Force a re-render of the HomePage component
-    if (activeTabId === "1") {
-      setSelectedTool((prev) => {
-        // Toggle between pencil and temp value to force re-render
-        const temp = prev === "pencil" ? "_pencil" : "pencil"
-        setTimeout(() => setSelectedTool("pencil"), 0)
-        return temp
-      })
-    }
-  }, [activeTabId])
 
   // Get active tab content
   const activeTabContent = tabs.find((tab) => tab.id === activeTabId)?.content || "home"
@@ -191,24 +177,14 @@ export default function PaintInterface() {
 
       {/* Content area with toolbar */}
       <div className="flex flex-1 min-h-0 overflow-hidden">
-        <Toolbar
-          selectedTool={selectedTool}
-          onToolSelect={handleToolSelect}
-          onClearDrawing={clearDrawing}
-          showClearButton={activeTabContent === "home"}
-        />
+        <Toolbar selectedTool={selectedTool} onToolSelect={handleToolSelect} />
 
         {/* Main content area */}
         <div className="flex flex-col flex-1 overflow-hidden">
           {/* Canvas area */}
           <div className="flex-1 bg-white border border-[#808080] overflow-auto">
             {activeTabContent === "home" && (
-              <HomePage
-                onNavigate={handleNavigate}
-                selectedColor={selectedColor}
-                selectedTool={selectedTool}
-                onClearDrawing={clearDrawing}
-              />
+              <HomePage onNavigate={handleNavigate} selectedColor={selectedColor} selectedTool={selectedTool} />
             )}
             {activeTabContent === "projects" && <Projects />}
             {activeTabContent === "about" && <AboutMe />}
@@ -231,4 +207,3 @@ export default function PaintInterface() {
     </div>
   )
 }
-
