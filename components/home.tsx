@@ -6,9 +6,10 @@ interface HomePageProps {
   onNavigate: (tab: string) => void
   selectedColor: string
   selectedTool: string
+  clearCounter: number // Counter to trigger clearing
 }
 
-export default function HomePage({ onNavigate, selectedColor, selectedTool }: HomePageProps) {
+export default function HomePage({ onNavigate, selectedColor, selectedTool, clearCounter }: HomePageProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const [isDrawing, setIsDrawing] = useState(false)
   const [lastPos, setLastPos] = useState({ x: 0, y: 0 })
@@ -43,7 +44,7 @@ export default function HomePage({ onNavigate, selectedColor, selectedTool }: Ho
     }
   }
 
-  // Clear the canvas and localStorage
+  // Clear the canvas
   const clearCanvas = () => {
     const canvas = canvasRef.current
     if (!canvas) return
@@ -52,8 +53,14 @@ export default function HomePage({ onNavigate, selectedColor, selectedTool }: Ho
     if (!ctx) return
 
     ctx.clearRect(0, 0, canvas.width, canvas.height)
-    localStorage.removeItem("ms-paint-drawing")
   }
+
+  // Listen for clear drawing events from parent
+  useEffect(() => {
+    if (clearCounter > 0) {
+      clearCanvas()
+    }
+  }, [clearCounter])
 
   useEffect(() => {
     const canvas = canvasRef.current
@@ -225,22 +232,9 @@ export default function HomePage({ onNavigate, selectedColor, selectedTool }: Ho
             High School Archive
           </button>
         </div>
-
-        {/* Clear canvas button - only visible when there's a drawing */}
-        <button
-          onClick={clearCanvas}
-          className="mt-8 px-4 py-2 bg-red-500 text-white font-bold border-2 border-black rounded-none transition-colors hover:bg-red-600 focus:outline-none pointer-events-auto"
-          style={{
-            fontFamily: "Arial, sans-serif",
-            textRendering: "geometricPrecision",
-            WebkitFontSmoothing: "antialiased",
-            MozOsxFontSmoothing: "grayscale",
-            boxShadow: "2px 2px 0 rgba(0,0,0,0.2)",
-          }}
-        >
-          Clear Drawing
-        </button>
       </div>
     </div>
   )
 }
+
+

@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { useState } from "react"
+import { useState, useCallback } from "react"
 import { useRouter } from "next/navigation"
 import { X } from "lucide-react"
 
@@ -32,6 +32,14 @@ export default function PaintInterface() {
   const [nextTabId, setNextTabId] = useState(2)
   const [selectedColor, setSelectedColor] = useState("#000000")
   const [selectedTool, setSelectedTool] = useState("pencil")
+  const [clearCounter, setClearCounter] = useState(0) // Counter to trigger clearing
+
+  // Function to clear the canvas - will be passed to both Toolbar and HomePage
+  const clearDrawing = useCallback(() => {
+    localStorage.removeItem("ms-paint-drawing")
+    // Increment the counter to trigger the useEffect in HomePage
+    setClearCounter((prev) => prev + 1)
+  }, [])
 
   // Get active tab content
   const activeTabContent = tabs.find((tab) => tab.id === activeTabId)?.content || "home"
@@ -177,14 +185,24 @@ export default function PaintInterface() {
 
       {/* Content area with toolbar */}
       <div className="flex flex-1 min-h-0 overflow-hidden">
-        <Toolbar selectedTool={selectedTool} onToolSelect={handleToolSelect} />
+        <Toolbar
+          selectedTool={selectedTool}
+          onToolSelect={handleToolSelect}
+          onClearDrawing={clearDrawing}
+          showClearButton={activeTabContent === "home"}
+        />
 
         {/* Main content area */}
         <div className="flex flex-col flex-1 overflow-hidden">
           {/* Canvas area */}
           <div className="flex-1 bg-white border border-[#808080] overflow-auto">
             {activeTabContent === "home" && (
-              <HomePage onNavigate={handleNavigate} selectedColor={selectedColor} selectedTool={selectedTool} />
+              <HomePage
+                onNavigate={handleNavigate}
+                selectedColor={selectedColor}
+                selectedTool={selectedTool}
+                clearCounter={clearCounter}
+              />
             )}
             {activeTabContent === "projects" && <Projects />}
             {activeTabContent === "about" && <AboutMe />}
