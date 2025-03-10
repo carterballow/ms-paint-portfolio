@@ -126,7 +126,7 @@ export default function HighSchoolArchive() {
             {[1, 2, 3, 4, 5, 6].map((item) => (
               <div key={item} className="border border-[#808080] p-1 bg-white">
                 <img
-                  src={`/IMG${item}.JPG`}
+                  src={`/imgs${item}.JPG`}
                   alt={`High School Memory ${item}`}
                   className="w-full h-auto"
                 />
