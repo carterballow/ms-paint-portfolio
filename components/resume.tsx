@@ -5,9 +5,8 @@ export default function Resume() {
   
         <div className="border-2 border-[#808080] p-6 bg-[#efefef]">
           <div className="text-center mb-6">
-            <h1 className="text-2xl font-bold">Carter Ballowow</h1>
-            <p className="text-sm">Encinitas, CA • (760) 525-4955 • carterballow06@g.ucla.edu</p>
-            <p className="text-sm">carterballow.com • github.com/carterballow • linkedin.com/in/carterballow/</p>
+            <h1 className="text-2xl font-bold">Carter Ballow</h1>
+            <a className="text-sm">Encinitas, CA • (760) 525-4955 • carterballow06@g.ucla.edu • carterballow.com • github.com/carterballow • linkedin.com/in/carterballow/</a>
           </div>
   
           <div className="mb-6">
@@ -17,7 +16,7 @@ export default function Resume() {
                 <p className="font-bold">University of California, Los Angeles</p>
                 <p>Bachelor of Science in Computer Science</p>
               </div>
-              <p>2022 - 2026</p>
+              <p>June 2026</p>
             </div>
             <p className="text-sm mt-1">GPA: 3.9/4.0</p>
             <p className="text-sm">Relevant Coursework: Discrete Structures, Differential Equations, Computer Science</p>
@@ -25,30 +24,43 @@ export default function Resume() {
   
           <div className="mb-6">
             <h2 className="text-lg font-bold border-b border-[#808080] mb-2">EXPERIENCE</h2>
-  
+
             <div className="mb-4">
               <div className="flex justify-between">
-                <p className="font-bold">Software Engineer</p>
-                <p>June 2022 - Present</p>
+                <p className="font-bold">Student Intern</p>
+                <p>March 2025 - Current</p>
               </div>
-              <p className="italic">Tech Innovations Inc., San Francisco, CA</p>
+              <p className="italic">CalTeach, Los Angeles, CA</p>
               <ul className="list-disc pl-5 mt-1 text-sm">
-                <li>Developed and maintained web applications using React, Node.js, and MongoDB</li>
-                <li>Implemented responsive designs and improved website performance by 40%</li>
-                <li>Collaborated with cross-functional teams to deliver high-quality software solutions</li>
+                <li>Taught fundamental math concepts to elementary students, fostering problem-solving skills.</li>
+                <li>Designed interactive lessons and activities to make learning math accessible for students.</li>
+                <li>Provided individualized support for students to build arithmetic and logical skills.</li>
               </ul>
             </div>
-  
+
             <div className="mb-4">
               <div className="flex justify-between">
-                <p className="font-bold">Web Development Intern</p>
-                <p>May 2021 - August 2021</p>
+                <p className="font-bold">AI Safety Fellow</p>
+                <p>January 2025 - March 2025</p>
               </div>
-              <p className="italic">Digital Solutions LLC, San Jose, CA</p>
+              <p className="italic">AI Safety @ UCLA, Los Angeles</p>
               <ul className="list-disc pl-5 mt-1 text-sm">
-                <li>Assisted in developing client websites using HTML, CSS, and JavaScript</li>
-                <li>Created responsive layouts and implemented interactive features</li>
-                <li>Participated in code reviews and team meetings</li>
+                <li>Researched ethical and societal implications of AI and prospective AI brinkmanship.</li>
+                <li>Explored strategies for leveraging AI through policy development, and ethical considerations.</li>
+                <li>Advocated for ethical deployment and regulation through articles and word of mouth.</li>
+              </ul>
+            </div>
+
+            <div className="mb-4">
+              <div className="flex justify-between">
+                <p className="font-bold">Tech Counselor</p>
+                <p>May 2022 - July 2022</p>
+              </div>
+              <p className="italic">CoLab Commons, Encinitas, California</p>
+              <ul className="list-disc pl-5 mt-1 text-sm">
+                <li>Instructed 3D printing, teaching design, prototyping, and additive manufacturing.</li>
+                <li>Taught rendering techniques, and software development while guiding students in visualizing models.</li>
+                <li>Coached fencing, improving students' technique, strategy, and performance.</li>
               </ul>
             </div>
           </div>
@@ -58,19 +70,19 @@ export default function Resume() {
             <div className="grid grid-cols-2 gap-4">
               <div>
                 <p className="font-bold">Programming Languages:</p>
-                <p className="text-sm">JavaScript, TypeScript, Python, Java, HTML/CSS</p>
+                <p className="text-sm">JavaScript, TypeScript, Python, Java, HTML/CSS, C++</p>
               </div>
               <div>
                 <p className="font-bold">Frameworks & Libraries:</p>
-                <p className="text-sm">React, Node.js, Express, Next.js, TailwindCSS</p>
+                <p className="text-sm">React, Node.js, Vite, Next.js, TailwindCSS</p>
               </div>
               <div>
                 <p className="font-bold">Tools & Technologies:</p>
-                <p className="text-sm">Git, Docker, AWS, MongoDB, PostgreSQL</p>
+                <p className="text-sm">Git, Docker, Vercel, MongoDB, SQL, GitHub</p>
               </div>
               <div>
                 <p className="font-bold">Soft Skills:</p>
-                <p className="text-sm">Problem Solving, Team Collaboration, Communication</p>
+                <p className="text-sm">Problem Solving, Work Ethic, Communication, Leadership</p>
               </div>
             </div>
           </div>
@@ -79,18 +91,29 @@ export default function Resume() {
             <h2 className="text-lg font-bold border-b border-[#808080] mb-2">PROJECTS</h2>
   
             <div className="mb-2">
-              <p className="font-bold">E-commerce Platform</p>
-              <p className="text-sm">A full-stack e-commerce solution with React, Node.js, and MongoDB</p>
+              <p className="font-bold">Hot Takes</p>
+              <p className="text-sm">A full-stack social media platform for debaters using TypeScript, React, Tailwind, and MongoDB</p>
+              <p className="text-sm">Won #1 Website at UCLA's competitive annual Hackathon: Hack on the Hill XII</p>
             </div>
   
             <div className="mb-2">
               <p className="font-bold">Weather Application</p>
-              <p className="text-sm">Real-time weather application using OpenWeather API</p>
+              <p className="text-sm">Coming soon... weather application using OpenWeather API</p>
             </div>
-  
-            <div>
-              <p className="font-bold">Task Management System</p>
-              <p className="text-sm">Collaborative task management tool with real-time updates</p>
+
+            <div className="mb-2">
+              <p className="font-bold">Basic Portfolio</p>
+              <p className="text-sm">Basic HTML, CSS, JS Website hosted by GitHub Pages</p>
+            </div>
+
+            <div className="mb-2">
+              <p className="font-bold">React Portfolio</p>
+              <p className="text-sm">React/Vite Website hosted by GH Pages but using routing</p>
+            </div>
+
+            <div className="mb-2">
+              <p className="font-bold">MS Paint Clone Portfolio</p>
+              <p className="text-sm">MS Paint clone using Tailwind, TS, and HTML hosted by Vercel</p>
             </div>
           </div>
         </div>

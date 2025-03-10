@@ -1,60 +1,75 @@
 export default function HighSchoolArchive() {
     const achievements = [
       {
-        title: "Science Fair Winner",
-        year: "2017",
-        description: "First place in the regional science fair for innovative renewable energy project",
+        title: "California Boys and Girls State Delegate",
+        year: "2023",
+        description: "Federalist Campaign Committee Manager and City Treasurer.",
       },
       {
-        title: "Debate Team Captain",
-        year: "2016-2018",
-        description: "Led the debate team to state finals two years in a row",
+        title: "Debate Team Secretary",
+        year: "2023-2023",
+        description: "Nationals competitor and team secratary, creating lesson plans and teaching novices.",
       },
       {
-        title: "Programming Club Founder",
-        year: "2017",
-        description: "Founded and led the school's first programming club with over 25 members",
+        title: "Pokemon Club & Pickleball Club Founder",
+        year: "2023-2024",
+        description: "Founded and led the school's first Pokemon and Pickleball club with over 150 members combined.",
       },
       {
-        title: "Honor Roll",
-        year: "2015-2018",
-        description: "Maintained a GPA of 3.9 or higher throughout high school",
+        title: "Silver Key Scholastic Artist",
+        year: "2022",
+        description: "Won the Scholastic Art and Writing Award for submission of 'Burried in a book', an image I took.",
       },
     ]
   
     const projects = [
       {
-        title: "Interactive School Map",
-        class: "Computer Science",
-        description: "Developed an interactive map of the school campus to help new students navigate",
+        title: "Grossmont Sharp Scholarship Recipient",
+        class: "$5,000",
+        description: "Merit scholarship awarded through academic excellence and community involvement.",
       },
       {
-        title: "Environmental Impact Study",
-        class: "Environmental Science",
-        description: "Conducted a study on the environmental impact of the school's waste management system",
+        title: "Joe W. Chavez Scholarship Recipient",
+        class: "$1,000",
+        description: "Scholarship for academic dedication and leadership from highly selective process.",
       },
       {
-        title: "Literary Magazine",
-        class: "English",
-        description: "Served as editor for the school's literary magazine, curating student submissions",
+        title: "HSF Scholarship Recipient",
+        class: "TBD",
+        description: "Largest scholarship organization for Latinx students in the United States. 8% selection rate",
       },
     ]
   
     const activities = [
       {
         title: "Basketball Team",
-        years: "2015-2018",
-        description: "Varsity player for three years, team captain in senior year",
+        years: "2020-2022",
+        description: "Varsity player for three years, team captain in senior year.",
       },
       {
-        title: "Student Government",
-        years: "2016-2018",
-        description: "Class representative for two years, organized multiple school events",
+        title: "Track/XC",
+        years: "2022-2024",
+        description: "Varsity runner for both years, and league qualifier in Track and Field.",
       },
       {
-        title: "Volunteer Work",
-        years: "2015-2018",
-        description: "Over 200 hours of community service at local food bank and animal shelter",
+        title: "Miracle League",
+        years: "2018-2024",
+        description: "Over 200 hours of community service at local accessible baseball association.",
+      },
+      {
+        title: "Ballow Fruit Company",
+        years: "2015-2024",
+        description: "Founded non-profit serving the food insecure in the greater San Diego area.",
+      },
+      {
+        title: "Encinitas Youth Commission",
+        years: "2022-2024",
+        description: "Chairman of the Encinitas Youth Commission serving over 60,000 citizens",
+      },
+      {
+        title: "Tech Tutor",
+        years: "2022",
+        description: "Taught rendering techniques, and software development to elementary schoolers.",
       },
     ]
   
@@ -79,12 +94,12 @@ export default function HighSchoolArchive() {
           </div>
   
           <div className="border-2 border-[#808080] p-4 bg-[#efefef]">
-            <h3 className="text-lg font-bold mb-4">Notable Projects</h3>
+            <h3 className="text-lg font-bold mb-4">Scholarships</h3>
             <div className="space-y-4">
               {projects.map((project, index) => (
                 <div key={index} className="border border-[#808080] p-3 bg-white">
                   <h4 className="font-bold">{project.title}</h4>
-                  <p className="text-sm italic">{project.class} Class</p>
+                  <p className="text-sm italic">{project.class}</p>
                   <p className="text-sm mt-1">{project.description}</p>
                 </div>
               ))}
@@ -111,7 +126,7 @@ export default function HighSchoolArchive() {
             {[1, 2, 3, 4, 5, 6].map((item) => (
               <div key={item} className="border border-[#808080] p-1 bg-white">
                 <img
-                  src={`/placeholder.svg?height=150&width=200`}
+                  src={`/IMG${item}.JPG`}
                   alt={`High School Memory ${item}`}
                   className="w-full h-auto"
                 />

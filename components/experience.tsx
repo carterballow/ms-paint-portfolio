@@ -1,38 +1,40 @@
 export default function Experience() {
     const experiences = [
       {
-        company: "Tech Innovations Inc.",
-        position: "Senior Frontend Developer",
-        period: "2020 - Present",
+        company: "CalTeach",
+        position: "Student Intern",
+        period: "2025 - Present",
         description:
-          "Led the development of the company's flagship product, improving performance by 40%. Mentored junior developers and implemented best practices for code quality.",
+          "Taught fundamental math concepts to elementary students, fostering problem-solving skills.\n" + 
+          "Designed interactive lessons and activities to make learning math accessible for students.\n" +
+          "Provided individualized support for students to build arithmetic and logical skills.",
       },
       {
-        company: "Digital Solutions LLC",
-        position: "Web Developer",
-        period: "2018 - 2020",
+        company: "AI Safety @ UCLA",
+        position: "AI Safety Fellow",
+        period: "2025",
         description:
-          "Developed and maintained multiple client websites. Collaborated with designers to implement responsive designs and interactive features.",
+          "Researched ethical and societal implications of AI and prospective AI brinkmanship. Explored strategies for leveraging AI through policy development, and ethical considerations. Advocated for ethical deployment and regulation through articles and word of mouth.",
       },
       {
-        company: "StartUp Ventures",
-        position: "Junior Developer",
-        period: "2016 - 2018",
+        company: "CoLab Commons",
+        position: "Tech Counselor",
+        period: "2022",
         description:
-          "Assisted in building web applications from scratch. Gained experience in full-stack development and agile methodologies.",
+          "Instructed 3D printing, teaching design, prototyping, and additive manufacturing. Taught rendering techniques, and software development while guiding students in visualizing models. Coached fencing, improving students' technique, strategy, and performance.",
       },
     ]
   
     const education = [
       {
-        institution: "Tech University",
-        degree: "Master of Computer Science",
-        period: "2014 - 2016",
+        institution: "University of California: Los Angeles",
+        degree: "Bachelor of Science: Computer Science",
+        period: "2022 - 2026",
       },
       {
-        institution: "State College",
-        degree: "Bachelor of Science in Web Development",
-        period: "2010 - 2014",
+        institution: "San Dieguito High School Academy",
+        degree: "High School Diploma",
+        period: "2018 - 2022",
       },
     ]
   

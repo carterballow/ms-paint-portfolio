@@ -6,7 +6,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from "lucide-react"
+import { Mail, Phone, MapPin, Github, Linkedin, Instagram, Facebook } from "lucide-react"
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -44,28 +44,31 @@ export default function Contact() {
             <div className="mt-4 space-y-3">
               <div className="flex items-center gap-3">
                 <Mail className="w-4 h-4" />
-                <span className="text-sm">email@example.com</span>
+                <span className="text-sm">carterballow06@g.ucla.edu</span>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-4 h-4" />
-                <span className="text-sm">(123) 456-7890</span>
+                <span className="text-sm">(760) 525-4955</span>
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="w-4 h-4" />
-                <span className="text-sm">San Francisco, CA</span>
+                <span className="text-sm">Los Angeles, CA</span>
               </div>
             </div>
 
             <div className="flex gap-4 mt-6">
-              <a href="#" className="p-2 border border-[#808080] hover:bg-[#c0c0c0]">
-                <Github className="w-5 h-5" />
-              </a>
-              <a href="#" className="p-2 border border-[#808080] hover:bg-[#c0c0c0]">
-                <Linkedin className="w-5 h-5" />
-              </a>
-              <a href="#" className="p-2 border border-[#808080] hover:bg-[#c0c0c0]">
-                <Twitter className="w-5 h-5" />
-              </a>
+            <a href="https://github.com/carterballow" className="p-2 border border-[#808080] hover:bg-[#c0c0c0]">
+            <Github className="w-5 h-5" />
+            </a>
+            <a href="https://www.linkedin.com/in/carterballow/" className="p-2 border border-[#808080] hover:bg-[#c0c0c0]">
+            <Linkedin className="w-5 h-5" />
+            </a>
+            <a href="https://instagram.com/carterballooooo" className="p-2 border border-[#808080] hover:bg-[#c0c0c0]">
+            <Instagram className="w-5 h-5" />
+            </a>
+            <a href="https://www.facebook.com/carter.ballow/" className="p-2 border border-[#808080] hover:bg-[#c0c0c0]">
+            <Facebook className="w-5 h-5" />
+            </a>
             </div>
           </div>
         </div>

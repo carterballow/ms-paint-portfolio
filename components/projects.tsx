@@ -1,22 +1,40 @@
 export default function Projects() {
     const projects = [
       {
-        title: "E-commerce Platform",
-        description: "A full-stack e-commerce solution with React, Node.js, and MongoDB",
-        image: "/placeholder.svg?height=150&width=250",
-        technologies: ["React", "Node.js", "Express", "MongoDB"],
+        title: "Hot Takes",
+        description: "A full-stack social media platform built using with React, Node, TypeScript, Tailwind, and MongoDB. Relevant for debaters or casual social media users looking to share their thoughts without censorship.",
+        image: "/hothleft.jpg?height=150&width=250",
+        technologies: ["React", "Node.js", "MongoDB"],
+      },
+      {
+        title: "Basic Portfolio",
+        description: "First attempt at a personal portfolio website built using fundamental web technologies: HTML, CSS, and JavaScript. Features sections for my skills, projects, and contact information.",
+        image: "/portfolio1.png?height=150&width=250",
+        technologies: ["JavaScript", "HTML", "CSS"],
+      },
+      {
+        title: "React Portfolio",
+        description: "Built a portfolio website to learn how to incorporate React for better front end development and enhanced user interface and routes rather than one static page.",
+        image: "/portfolio2.png?height=150&width=250",
+        technologies: ["React", "JavaScript", "Figma"],
+      },
+      {
+        title: "MS Paint Clone",
+        description: "Created a portfolio using tailwind, typescript and vercel for deployment to clone MS Paint and showcase my accomplishments.",
+        image: "/portfolio3.png?height=150&width=250",
+        technologies: ["TypeScript", "Vercel", "Tailwind"],
+      },
+      {
+        title: "La Hacks Project",
+        description: "COMING SOON...",
+        image: "/lahacks.png?height=150&width=250",
+        technologies: ["tbd", "tbd", "tbd"],
       },
       {
         title: "Weather App",
-        description: "Real-time weather application using OpenWeather API",
-        image: "/placeholder.svg?height=150&width=250",
-        technologies: ["JavaScript", "HTML/CSS", "REST API"],
-      },
-      {
-        title: "Task Management System",
-        description: "Collaborative task management tool with real-time updates",
-        image: "/placeholder.svg?height=150&width=250",
-        technologies: ["React", "Firebase", "Material UI"],
+        description: "COMING SOON...",
+        image: "/weatherapp.png?height=150&width=250",
+        technologies: ["tbd", "tbd", "some api"],
       },
     ]
   
