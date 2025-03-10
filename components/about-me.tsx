@@ -6,7 +6,7 @@ export default function AboutMe() {
         <div className="flex flex-col md:flex-row gap-6">
           <div className="w-full md:w-1/3">
             <div className="border-2 border-[#808080] p-2 bg-[#efefef]">
-              <img src="/aboutme.jpg?height=300&width=300" alt="Profile" className="w-full border border-[#808080]" />
+              <img src="/copy.jpg?height=300&width=300" alt="Profile" className="w-full border border-[#808080]" />
             </div>
           </div>
   
