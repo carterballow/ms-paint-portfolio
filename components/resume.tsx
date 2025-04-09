@@ -6,7 +6,7 @@ export default function Resume() {
         <div className="border-2 border-[#808080] p-6 bg-[#efefef]">
           <div className="text-center mb-6">
             <h1 className="text-2xl font-bold">Carter Ballow</h1>
-            <a className="text-sm">Encinitas, CA • (760) 525-4955 • carterballow06@g.ucla.edu • carterballow.com • github.com/carterballow • linkedin.com/in/carterballow/</a>
+            <a className="text-sm">Encinitas CA • (760) 525-4955 • carterballow06@g.ucla.edu • carterballow.com • github.com/carterballow • linkedin.com/in/carterballow/</a>
           </div>
   
           <div className="mb-6">
