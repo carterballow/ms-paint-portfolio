@@ -4,7 +4,7 @@ export default function Projects() {
         title: "Hot Takes",
         description: "A full-stack social media platform built using with React, Node, TypeScript, Tailwind, and MongoDB. Relevant for debaters or casual social media users looking to share their thoughts without censorship.",
         image: "/hothleft.jpg?height=150&width=250",
-        technologies: ["React", "Node.js", "MongoDB"],
+        technologies: ["React", "Node.js", "MongoB"],
       },
       {
         title: "Basic Portfolio",
