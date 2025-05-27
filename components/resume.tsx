@@ -18,7 +18,7 @@ export default function Resume() {
               </div>
               <p>June 2028</p>
             </div>
-            <p className="text-sm mt-1">GPA: 3.83/4.0</>
+            <p className="text-sm mt-1">GPA: 3.83/4.0</p>
           </div>
   
           <div className="mb-6">
