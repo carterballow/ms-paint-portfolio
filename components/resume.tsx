@@ -5,7 +5,7 @@ export default function Resume() {
   
         <div className="border-2 border-[#808080] p-6 bg-[#efefef]">
           <div className="text-center mb-6">
-            <h1 className="text-2xl font-bold">Carter Ballo</h1>
+            <h1 className="text-2xl font-bold">Carter Ballow</h1>
             <a className="text-sm">Encinitas, CA • (760) 525-4955 • carterballow06@g.ucla.edu • carterballow.com • github.com/carterballow • linkedin.com/in/carterballow/</a>
           </div>
   
@@ -23,6 +23,20 @@ export default function Resume() {
   
           <div className="mb-6">
             <h2 className="text-lg font-bold border-b border-[#808080] mb-2">EXPERIENCE</h2>
+
+              <div className="mb-4">
+              <div className="flex justify-between">
+                <p className="font-bold">Effective Altruism Fellow</p>
+                <p>April 2025 - Current</p>
+              </div>
+              <p className="italic">Effective Altruism @ UCLA, Los Angeles, CA</p>
+              <ul className="list-disc pl-5 mt-1 text-sm">
+                <li>Researched methodologies to optimize individual impact through cost-effectiveness analyses and evidence-based practices.</li>
+                <li>Analyzed and prioritized high-impact cause areas, developing actionable recommendations for interventions.</li>
+                <li>Produced detailed reports on ethical frameworks and long-term considerations guiding effective decision-making.</li>
+              </ul>
+            </div>
+          </div>
 
             <div className="mb-4">
               <div className="flex justify-between">
@@ -42,27 +56,13 @@ export default function Resume() {
                 <p className="font-bold">AI Safety Fellow</p>
                 <p>January 2025 - March 2025</p>
               </div>
-              <p className="italic">AI Safety @ UCLA, Los Angeles</p>
+              <p className="italic">AI Safety @ UCLA, Los Angeles, CA</p>
               <ul className="list-disc pl-5 mt-1 text-sm">
                 <li>Researched ethical and societal implications of AI and prospective AI brinkmanship.</li>
                 <li>Explored strategies for leveraging AI through policy development, and ethical considerations.</li>
                 <li>Advocated for ethical deployment and regulation through articles and word of mouth.</li>
               </ul>
             </div>
-
-            <div className="mb-4">
-              <div className="flex justify-between">
-                <p className="font-bold">Tech Counselor</p>
-                <p>May 2022 - July 2022</p>
-              </div>
-              <p className="italic">CoLab Commons, Encinitas, California</p>
-              <ul className="list-disc pl-5 mt-1 text-sm">
-                <li>Instructed 3D printing, teaching design, prototyping, and additive manufacturing.</li>
-                <li>Taught rendering techniques, and software development while guiding students in visualizing models.</li>
-                <li>Coached fencing, improving students' technique, strategy, and performance.</li>
-              </ul>
-            </div>
-          </div>
   
           <div className="mb-6">
             <h2 className="text-lg font-bold border-b border-[#808080] mb-2">SKILLS</h2>
