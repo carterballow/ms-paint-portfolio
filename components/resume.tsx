@@ -6,7 +6,7 @@ export default function Resume() {
         <div className="border-2 border-[#808080] p-6 bg-[#efefef]">
           <div className="text-center mb-6">
             <h1 className="text-2xl font-bold">Carter Ballow</h1>
-            <a className="text-sm">Encinitaz, CA • (760) 525-4955 • carterballow06@g.ucla.edu • carterballow.com • github.com/carterballow • linkedin.com/in/carterballow/</a>
+            <a className="text-sm">Encinitas, CA • (760) 525-4955 • carterballow06@g.ucla.edu • carterballow.com • github.com/carterballow • linkedin.com/in/carterballow/</a>
           </div>
   
           <div className="mb-6">
@@ -16,10 +16,9 @@ export default function Resume() {
                 <p className="font-bold">University of California, Los Angeles</p>
                 <p>Bachelor of Science in Computer Science</p>
               </div>
-              <p>June 2026</p>
+              <p>June 2028</p>
             </div>
-            <p className="text-sm mt-1">GPA: 3.9/4.0</p>
-            <p className="text-sm">Relevant Coursework: Discrete Structures, Differential Equations, Computer Science</p>
+            <p className="text-sm mt-1">GPA: 3.83/4.0</>
           </div>
   
           <div className="mb-6">
@@ -28,7 +27,7 @@ export default function Resume() {
             <div className="mb-4">
               <div className="flex justify-between">
                 <p className="font-bold">Student Intern</p>
-                <p>March 2025 - Current</p>
+                <p>March 2025 - May 2025</p>
               </div>
               <p className="italic">CalTeach, Los Angeles, CA</p>
               <ul className="list-disc pl-5 mt-1 text-sm">
