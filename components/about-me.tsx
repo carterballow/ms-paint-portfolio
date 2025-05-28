@@ -20,7 +20,7 @@ export default function AboutMe() {
                 ways to improve the management of technology in government.
               </p>
               <p className="mt-2">
-                When I'm not coding, you can find me reading, watching jeopardy, playing Brawl Stars or Clash of Clans, eating greek yogurt, listening to music, being clumsy, starting passion projects and lurking around.
+                When I'm not coding, you can find me playing pickleball, reading, watching jeopardy, playing supercell games, eating greek yogurt, playing bass, and going to live music shows.
               </p>
             </div>
   
