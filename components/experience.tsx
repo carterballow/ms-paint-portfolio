@@ -29,12 +29,12 @@ export default function Experience() {
       {
         institution: "University of California: Los Angeles",
         degree: "Bachelor of Science: Computer Science",
-        period: "2022 - 2026",
+        period: "2024 - 2027",
       },
       {
         institution: "San Dieguito High School Academy",
         degree: "High School Diploma",
-        period: "2018 - 2022",
+        period: "2020 - 2024",
       },
     ]
   
