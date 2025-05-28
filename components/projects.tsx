@@ -27,14 +27,14 @@ export default function Projects() {
       {
         title: "SafeWorld MUN",
         description: "Lua-powered Mock Model UN game on Roblox, featuring custom-built maps, dynamic debate mechanics, and intuitive interfaces for drafting resolutions and voting in real time.",
-        image: "/lahacks.png?height=150&width=250",
-        technologies: ["tbd", "tbd", "tbd"],
+        image: "/safeworldmun.png?height=150&width=250",
+        technologies: ["Lua", "Roblox Studio", "HTML"],
       },
       {
         title: "Weather App",
         description: "COMING SOON...",
         image: "/weatherapp.png?height=150&width=250",
-        technologies: ["tbd", "tbd", "some api"],
+        technologies: ["tbd", "tbd", "tbd"],
       },
     ]
   
