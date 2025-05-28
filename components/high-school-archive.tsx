@@ -7,7 +7,7 @@ export default function HighSchoolArchive() {
       },
       {
         title: "Debate Team Secretary",
-        year: "2023-2023",
+        year: "2023-2024",
         description: "Nationals competitor and team secratary, creating lesson plans and teaching novices.",
       },
       {
@@ -44,12 +44,12 @@ export default function HighSchoolArchive() {
       {
         title: "Basketball Team",
         years: "2020-2022",
-        description: "Varsity player for three years, team captain in senior year.",
+        description: "Junior Varsity athlete for two years in high school",
       },
       {
         title: "Track/XC",
         years: "2022-2024",
-        description: "Varsity runner for both years, and league qualifier in Track and Field.",
+        description: "Varsity runner for both sports, and league qualifier in track and field.",
       },
       {
         title: "Miracle League",
