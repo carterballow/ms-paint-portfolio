@@ -16,7 +16,7 @@ export default function Resume() {
                 <p className="font-bold">University of California, Los Angeles</p>
                 <p>Bachelor of Science in Computer Science</p>
               </div>
-              <p>June 2028</p>
+              <p>June 2027</p>
             </div>
             <p className="text-sm mt-1">GPA: 3.83/4.0</p>
           </div>
