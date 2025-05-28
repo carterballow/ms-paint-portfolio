@@ -28,11 +28,11 @@ export default function AboutMe() {
               <h3 className="text-lg font-bold">Skills</h3>
               <div className="grid grid-cols-2 gap-2 mt-2">
                 <SkillBar skill="JavaScript" percentage={90} />
-                <SkillBar skill="React" percentage={85} />
-                <SkillBar skill="Node.js" percentage={100} />
+                <SkillBar skill="React" percentage={95} />
+                <SkillBar skill="Node.js" percentage={70} />
                 <SkillBar skill="HTML/CSS" percentage={100} />
-                <SkillBar skill="TypeScript" percentage={90} />
-                <SkillBar skill="UI/UX Design" percentage={95} />
+                <SkillBar skill="TypeScript" percentage={70} />
+                <SkillBar skill="UI/UX Design" percentage={65} />
               </div>
             </div>
           </div>
