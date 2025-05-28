@@ -25,8 +25,8 @@ export default function Projects() {
         technologies: ["TypeScript", "Vercel", "Tailwind"],
       },
       {
-        title: "La Hacks Project",
-        description: "COMING SOON...",
+        title: "SafeWorld MUN",
+        description: "Lua-powered Mock Model UN game on Roblox, featuring custom-built maps, dynamic debate mechanics, and intuitive interfaces for drafting resolutions and voting in real time.",
         image: "/lahacks.png?height=150&width=250",
         technologies: ["tbd", "tbd", "tbd"],
       },
