@@ -96,13 +96,14 @@ export default function Resume() {
             </div>
   
             <div className="mb-2">
-              <p className="font-bold">Weather Application</p>
-              <p className="text-sm">Coming soon... weather application using OpenWeather API</p>
+              <p className="font-bold">SafeWorld MUN</p>
+              <p className="text-sm">SafeWorld UN is a Lua-powered Mock Model UN game on Roblox, featuring custom-built maps and dynamic game features.</p>
+                <p className="text-sm">Submitted to LAHacks 25'</p>
             </div>
 
             <div className="mb-2">
               <p className="font-bold">Basic Portfolio</p>
-              <p className="text-sm">Basic HTML, CSS, JS Website hosted by GitHub Pages</p>
+              <p className="text-sm">1st Attempt at a portfolio. Basic HTML, CSS, JS Website hosted by GitHub Pages</p>
             </div>
 
             <div className="mb-2">
