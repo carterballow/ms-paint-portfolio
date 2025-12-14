@@ -14,7 +14,7 @@ export default function Resume() {
                     <div className="flex justify-between">
                         <div>
                             <p className="font-bold">University of California, Los Angeles</p>
-                            <p>Bachelor of Science in Math of Computation</p>
+                            <p>Bachelor of Science Computer Science</p>
                         </div>
                         <p>June 2027</p>
                     </div>
